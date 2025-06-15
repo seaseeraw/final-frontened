@@ -1,12 +1,37 @@
-import React from 'react'
-
+import React,{useState} from 'react';
+import '../App.css';
+import Footers from './footer';
+import { useEffect } from 'react';
 const Home = () => {
+  const [data, setData] =useState([]);
+  useEffect(()=>{
+    const fetchData = async ()=>{
+      const response = await fetch('/a.json')
+      const result = await response.json();
+      setData(result);
+      console.log(result);
+    };
+    fetchData();
+  },[]);
   return (
-    <div className='home'>
-        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+  <>   
+  <div className='home'>
+        <div><h1>Sayings</h1>
+        {data.map((item, index)=>(
+          <p key={index}>"{item.quote}" - {item.author}</p>
+        ))}
+        </div>
         <div><img src="./src/assets/tiger.jpg" alt="Placeholder" /></div>
+        {/* <div><Footers/></div> */}
     </div>
+  <div><Footers/></div>
+  
+  </>
+  
+  
+ 
+   
   )
 }
 
-export default Home
+export default Home;
