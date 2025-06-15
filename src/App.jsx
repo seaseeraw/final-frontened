@@ -2,13 +2,15 @@
 
 import React from 'react';
 import Navs from './components/Navbar';
-import Col from './components/collections'; 
+
+import Home from './pages/Home';
 
 const App = () => {
   return (
     <div>
       <Navs />
-      <Col /> 
+     
+      <Home/>
     </div>
   );
 };

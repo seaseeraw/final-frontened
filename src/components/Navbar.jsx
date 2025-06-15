@@ -1,22 +1,21 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
-const Navs = () => {
+import '../App.css'
+const Navbar = () => {
   return (
-    <Navbar bg="primary" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+    
+      <div className='navs'>
+        <div className='logo'>Logo</div>
+        <div className='search'>
+          <input type="text" placeholder='Search' />
+          <button id='a'>Search</button>
+        </div>
+        <div className='login'>Login</div>
+      </div>
+       
 
+  
+    
   )
 }
 
-export default Navs;
+export default Navbar
