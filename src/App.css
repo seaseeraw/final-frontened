@@ -8,9 +8,9 @@ background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+
     justify-content: space-between;
     padding: 10px;
 } 
-#a:hover{
+/* #a:hover{
     background-color:blue;
-}
+} */
 
 .home{
     background: #59C173;  /* fallback for old browsers */
