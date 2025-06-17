@@ -16,7 +16,7 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    max-height: 100vh;
+    min-height: 100vh;
 }
 .box{
     background-color: #fff;
