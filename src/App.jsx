@@ -1,19 +1,24 @@
 
-
-import React from 'react';
-import Navs from './components/Navbar';
-
+import React from 'react'
+import Footers from './pages/footer';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-
+import About from './pages/about';
+import Contact from './pages/contact';
 const App = () => {
   return (
-    <div>
-      <Navs />
-     
-      <Home/>
-      
-    </div>
-  );
-};
+   
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footers />
+    </Router>  
+  )
+}
 
-export default App;
+export default App
