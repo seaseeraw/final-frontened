@@ -1,17 +1,56 @@
-import React from 'react'
+// import React from 'react'
+
+import React, { useState } from 'react';
 import '../App.css';
-import Button from 'react-bootstrap/Button';
+
 const Home = () => {
+  const[message, setmessage]=useState("Hello World");
+  const handleOnClick = () => {
+    setmessage("Button clicked!");
+  };
+
   return (
     <>
-    <div className='home'>
-      <div className='box'><h1>Welcome to the Home Page</h1></div>
-      <div className='box'><p>This is the home page of our website.</p><br/><Button variant="success">Success</Button></div>
-      <div className='box'><p>Here you can find various resources and information.</p></div>
-    </div>
+      <div className='a'>
+        <section id='b'>
+          Dashboard
+          <ul>
+            <li onClick={handleOnClick}>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </section>
+
+        <section id='c'>{message}</section>
+      </div>
     </>
-  
-  )
-}
+  );
+};
 
 export default Home;
+
+// import '../App.css';
+// const Home = () => {
+//   return (
+    
+//     <>
+//     const handleOnClick = () => {
+//   console.log("Button clicked!");
+// };
+
+//     <div className='a'>
+//       <section id='b'>Dashboard
+//         <li>Item 1 {Home}</li>
+//         <li>Item 2 </li>
+//         <li>Item 3 </li>
+//       </section>
+//       <section id='c'>World</section>
+      
+//     </div>
+
+   
+//     </>
+//   )
+// }
+
+// export default Home;
