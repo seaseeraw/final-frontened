@@ -9,12 +9,7 @@ min-height: 5vh;
 color:black;
 
 }
-/* .shi{
-    display: flex;
-    gap:20px;
-   padding: 10px;
-   
-} */
+/* cd */
 
 
 
@@ -132,6 +127,44 @@ color:black;
   margin-left: 8px;
 }
 
+.signup {
+  max-width: 400px;
+  margin: auto;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
+.signup form div {
+  margin-bottom: 15px;
+}
+
+.signup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.signup input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.signup button {
+  width: 100%;
+  padding: 10px;
+  background: #12c2e9;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.signup button:hover {
+  background: #0fa4c7;
+}
 
 
