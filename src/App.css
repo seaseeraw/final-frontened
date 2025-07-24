@@ -5,8 +5,9 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 ;
 display:flex;
 justify-content: space-between;
-min-height: 5vh;
+min-height: 10vh;
 color:black;
+align-items: center;
 
 }
 /* cd */
@@ -22,8 +23,8 @@ color:black;
 .shi a {
   color: white;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 25px;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -169,10 +170,31 @@ color:black;
 
 
 .about{
-  display:flex;
-  flex-direction: column;
-  row-gap: 20px;
-background-color:transparent;
-padding: 20px;
-min-height: 100vh;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color:transparent;
+  padding: 20px;
+  min-height: 100vh;
+ 
 }
+.about div {
+  
+  background-color: #c471ed;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: red;
+  gap: 20px;
+}
+
+.footer{
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+

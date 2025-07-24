@@ -15,7 +15,9 @@ const Home = () => {
   <section id='k'><i class="fa-regular fa-handshake" ></i> Product</section>
   <section id='k'><i class="fa-solid fa-coins" ></i>  <Link to="/trans" className="custom-link">Transition</Link></section>
         </section>
-        <section id='c'>2</section>
+        <section id='c' >2
+         
+        </section>
         <section id='d'>3</section>
       </div>
     </>
